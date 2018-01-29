@@ -1,3 +1,10 @@
-<p>
-  sibling1 works!
-</p>
+
+  <div class="container">
+      <div class="col-sm-8 col-sm-offset-2">
+          <div *ngIf="message" class="alert alert-success">{{message.text}}</div>
+          <div *ngIf="hero.id == 1; then ifcondition else elsecondition"> ... </div>  
+<template #ifcondition>If Condion Works!</template>  
+<template #elsecondition>Else Condition Works!</template>  
+
+      </div>
+  </div>

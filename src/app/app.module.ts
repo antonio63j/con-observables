@@ -8,6 +8,8 @@ import { Sibling2Component } from './sibling/sibling2/sibling2.component';
 
 import { routing } from './app.routing';
 
+import { MessageService } from './services/message.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { routing } from './app.routing';
     BrowserModule,
     routing
   ],
-  providers: [],
+  providers: [MessageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
